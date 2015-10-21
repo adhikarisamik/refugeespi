@@ -1,0 +1,89 @@
+{
+ "nodes": [
+  {
+   "id": 1,
+   "name": "Afghanistan"
+  },
+  {
+   "id": 2,
+   "name": "Syria"
+  },
+  {
+   "id": 3,
+   "name": "Pakistan"
+  },
+  {
+   "id": 6,
+   "name": "Turkey"
+  },
+  {
+   "id": 7,
+   "name": "Jordan"
+  },
+  {
+   "id": 10,
+   "name": "Pakistan "
+  },
+  {
+   "id": 11,
+   "name": "France "
+  },
+  {
+   "id": 12,
+   "name": "Germany "
+  },
+  {
+   "id": 13,
+   "name": "Turkey "
+  },
+  {
+   "id": 14,
+   "name": "Jordan "
+  }
+ ],
+ "links": [
+  {
+   "id": 1,
+   "source": "Syria",
+   "target": "Turkey ",
+   "value": 1045186
+  },
+  {
+   "id": 2,
+   "source": "Syria",
+   "target": "Jordan ",
+   "value": 9156
+  },
+  {
+   "id": 3,
+   "source": "Afghanistan",
+   "target": "Pakistan ",
+   "value": 11743048
+  },
+  {
+   "id": 4,
+   "source": "Pakistan",
+   "target": "Germany ",
+   "value": 11208
+  },
+  {
+   "id": 5,
+   "source": "Turkey",
+   "target": "France ",
+   "value": 8863864
+  },
+  {
+   "id": 6,
+   "source": "Jordan",
+   "target": "Turkey ",
+   "value": 118
+  }
+ ,
+  {
+   "id": 6,
+   "source": "Jordan",
+   "target": "Germany ",
+   "value": 11809523
+  }
+ ]
+}

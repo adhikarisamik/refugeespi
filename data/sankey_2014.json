@@ -1,0 +1,96 @@
+{
+ "nodes": [
+  {
+   "id": 3,
+   "name": "Upper Middle Social Progress"
+  },
+  {
+   "id": 4,
+   "name": "Lower Middle Social Progress"
+  },
+  {
+   "id": 5,
+   "name": "Low Social Progress"
+  },
+  {
+   "id": 6,
+   "name": "Very Low Social Progress"
+  },
+  {
+   "id": 7,
+   "name": "Very High Social Progress "
+  },
+  {
+   "id": 8,
+   "name": "High Social Progress "
+  },
+  {
+   "id": 9,
+   "name": "Upper Middle Social Progress "
+  },
+  {
+   "id": 10,
+   "name": "Lower Middle Social Progress "
+  },
+  {
+   "id": 11,
+   "name": "Low Social Progress "
+  }
+ ],
+ "links": [
+  {
+   "id": 1,
+   "source": "Low Social Progress",
+   "target": "Low Social Progress ",
+   "value": 10455186
+  },
+  {
+   "id": 2,
+   "source": "Low Social Progress",
+   "target": "High Social Progress ",
+   "value": 9156300
+  },
+  {
+   "id": 3,
+   "source": "Lower Middle Social Progress",
+   "target": "Upper Middle Social Progress ",
+   "value": 11743048
+  },
+  {
+   "id": 4,
+   "source": "Lower Middle Social Progress",
+   "target": "Lower Middle Social Progress ",
+   "value": 11208123
+  },
+  {
+   "id": 5,
+   "source": "Low Social Progress",
+   "target": "Upper Middle Social Progress ",
+   "value": 8863864
+  },
+  {
+   "id": 6,
+   "source": "Very Low Social Progress",
+   "target": "Upper Middle Social Progress ",
+   "value": 11809523
+  },
+  {
+   "id": 7,
+   "source": "Upper Middle Social Progress",
+   "target": "High Social Progress ",
+   "value": 21663309
+  },
+  {
+   "id": 8,
+   "source": "Very Low Social Progress",
+   "target": "Low Social Progress ",
+   "value": 18020164
+  },
+  {
+   "id": 9,
+   "source": "Low Social Progress",
+   "target": "Very High Social Progress ",
+   "value": 23552571
+  }
+ ]
+}

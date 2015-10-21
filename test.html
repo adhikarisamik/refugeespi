@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+
+    <title>Refugee population by Social Progress Index </title>
+    <meta charset="UTF-8">
+
+
+</head>
+
+<!--Load Libraries-->
+<script src="js/d3.min.js"></script>
+
+
+
+<!-- add own vis classes-->
+<script  src= "js/sankey.js"></script>
+<script  src = "js/migration_flow_sankey.js"></script>
+<script src = "http://d3js.org/queue.v1.min.js"></script>
+<script src="libs/jquery/jquery-2.1.1.min.js" charset="utf-8"></script>
+
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/colorbrewer.css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- add own stylesheet-->
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+<body>
+
+
+<div  id = "sankey_dash" class="sankey_dash">
+        <h3>Refugee Movement by Time and Social Progress Index Group</h3>
+
+        <p>
+            Year:
+            <!--1980: <input name="slider-time" value= 1980 id = "_1980" type="radio" checked>-->
+            <!--1985: <input name="slider-time" value= 1985 id = "_1985" type="radio" >-->
+            <!--1990: <input name="slider-time" value= 1990 id = "_1990" type="radio" >-->
+            <!--1995: <input name="slider-time" value= 1995 id = "_1995" type="radio" >-->
+            <!--2000: <input name="slider-time" value= 2000 id = "_2000" type="radio" >-->
+            2013: <input name="slider-time" value= 2013 id = "_2013" type="radio" checked>
+            2014: <input name="slider-time" value= 2014 id = "_2014" type="radio" >
+
+        </p>
+        <form>
+
+
+            <b>
+                Aggregate by:
+                Social Progress Index: <input name="sankey_type" value="sankey_ed" id = "sankey_ed" type="radio" checked>
+                Countries: <input name="sankey_type" value="sankey_oecd" id = "sankey_oecd" type="radio" >
+            </b>
+        </form>
+
+</div>
+
+    <div  id = "sankey" class="sankey">
+        ****WARNING: THIS IS NOT REAL DATA YET!!!!
+    </div>
+
+
+
+
+
+
+<script>
+    $(function() {
+        sank = new sankey_chart(d3.select("#sankey"))
+
+        d3.selectAll("input").on("change", function () {
+            if (d3.select(this).attr("name") == "slider-time") {
+                sank.update();
+            }
+
+            if (d3.select(this).attr("name") == "sankey_type") {
+                sank.update();
+            }
+
+
+        });
+    });
+</script>
+
+</body>
+</html>
